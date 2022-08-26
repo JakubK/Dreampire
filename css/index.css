@@ -459,3 +459,45 @@
         display: block;
     }
 }
+
+.clients {
+    padding: 3.5em 2em;
+    margin-top: 3em;
+    background: #F9F9F9;
+}
+
+.clients__heading {
+    text-align: center;
+
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 30px;
+    color: #242424;
+}
+
+.clients__list {
+    margin-left: -1em;
+    margin-right: -1em;
+
+    margin-top: 1.2em;
+
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-columns: 1fr 1fr 1fr;
+
+    justify-items: center;
+    align-items: center;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .clients__heading {
+        font-size: 40px;
+    }
+    .clients__list {
+        margin-left: 0;
+        margin-right: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
