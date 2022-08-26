@@ -322,9 +322,13 @@
 }
 
 .gallery__content {
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 4em;
+
+    transition: left .5s;
+    left: 0;
 }
 
 .gallery-item {
@@ -336,7 +340,19 @@
     position: relative;
     flex-shrink: 0;
 
-    margin: 0 2.2em;
+    margin: 0 32px;
+}
+
+.gallery-item span {
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 22px;
+    color: #FFFFFF;
+
+    position: absolute;
+    bottom: 10px;
+    left: 28px;
+
 }
 
 .gallery__content .gallery-item:first-of-type {
@@ -403,6 +419,10 @@
     .gallery-item {
         width: 434px;
         height: 289px;
+    }
+
+    .gallery-item span {
+        font-size: 27px;
     }
 }
 
