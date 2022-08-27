@@ -8,6 +8,37 @@ html, body {
     scroll-behavior: smooth;
 }
 
+
+body{
+    height:100vh;
+    margin:0;
+    display:flex; 
+    flex-direction:column;
+
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+body > * {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    body > * {
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+}
+
+footer {
+    margin-top:auto; 
+}
+
+
 ul {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -16,3 +47,20 @@ ul {
     padding-inline-start: 0;
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Light.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Bold.otf") format("opentype");
+    font-weight: 700;
+}

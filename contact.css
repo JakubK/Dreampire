@@ -1,0 +1,119 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb__previous a {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #0E85B5;
+}
+
+.breadcrumb__current {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    color: #242424;
+}
+
+.breadcrumb__separator {
+    margin: 0 1em;
+}
+
+.contact__nav {
+    margin-bottom: 1.3em;
+}
+
+.contact__image img {
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+.frame {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 2px 30px rgba(25, 53, 124, 0.12);
+}
+
+.contact__content {
+    position: relative;
+    top: -1em;
+    padding: 1.5em;
+}
+
+.contact__content h2 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: #242424;
+}
+
+.contact__content p {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: #242424;
+}
+
+.contact__list {
+    margin-top: 2em;
+}
+
+.contact__item {
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact__item svg {
+    margin-right: 1.5em;
+}
+
+.contact__item span {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #242424;
+}
+
+@media screen and (min-width: 768px) {
+    .contact__content {
+        top: 0;
+        padding: 3em;
+    }
+
+    .contact__content h2 {
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    .contact__content p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .frame {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .contact__image img {
+        height: 100%;
+        object-fit: cover;
+
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .contact__data {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2em;
+    }
+}

@@ -1,0 +1,192 @@
+.navigation {
+    padding: 2.5em 2em 2.5em 2em;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 100;
+}
+
+.navigation + * {
+    padding-top: 8em;
+}
+
+.navigation__front {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation__brand {
+    content: url('../img/logo.png');
+}
+
+.navigation__content {
+    margin-top: 1em;
+    margin-left: 1em;
+    display: none;
+}
+
+.navigation__items {
+    list-style-type: none;
+}
+
+.navigation__item {
+    margin: 1em 0;
+}
+
+.navigation__item a {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+
+    text-decoration: none;
+}
+
+.navigation__item a:hover, .navigation__item--active a {
+    color: #59B3D7;
+}
+
+.navigation.navigation--active {
+    background: #19357C;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.navigation__close {
+    z-index: 1;
+    display: none;
+}
+
+.navigation--active .navigation__brand {
+    opacity: 0;
+}
+
+.navigation--active .navigation__burger {
+    display: none;
+}
+
+.navigation--active .navigation__content {
+    display: block;
+}
+
+.navigation--active .navigation__close {
+    display: block;
+}
+
+.navigation__copy {
+    position: absolute;
+    bottom: 1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+    font-size: 0.9em;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 300;
+
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    background: #59B3D7;
+    border-radius: 45px;
+
+    transform: translateX(60%) rotate(33deg);
+
+    z-index: 0;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.shape__circle {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.25);
+
+    width: 49px;
+    height: 49px;
+
+    transform: translateX(-50%);
+}
+
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+    .navigation__burger {
+        display: none;
+    }
+
+    .navigation {
+        padding: 4em 6em 4em 6em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .navigation--active .navigation__brand {
+        opacity: 1;
+    }
+
+    .navigation--active {
+        background: transparent;
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .navigation__brand {
+        content: url('../img/logo-big.png');
+    }
+
+    .navigation__copy {
+        display: none;
+    }
+
+    .navigation__content {
+        display: block;
+        margin: 0;
+    }
+
+    .navigation__items {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation__item {
+        margin: 0 3em;
+    }
+
+    .navigation__item a {
+        font-family: 'Gilroy', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .shape {
+        background: #19357C;
+        border-radius: 90px;
+        width: 700px;
+        height: 700px;
+        transform: translateY(-512px) rotate(9deg);
+        z-index: -1;
+    }
+
+    .shape__circle {
+        display: none;
+    }
+}
