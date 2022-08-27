@@ -38,6 +38,11 @@ footer {
     margin-top:auto; 
 }
 
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 
 ul {
     margin-block-start: 0;

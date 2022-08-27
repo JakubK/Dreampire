@@ -1,0 +1,152 @@
+.studio__nav {
+    margin-bottom: 1.3em;
+}
+
+.studio__show {
+    width: 100vw;
+    /* height: auto; */
+    height: 300px;
+    background: gray;
+    margin-left: -2em;
+}
+
+.studio h2 {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #242424;
+}
+
+.studio p {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.studio__images {
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+.studio__image {
+    width: 100%;
+    /* height: auto; */
+    height: 225px;
+    background: gray;
+    border-radius: 12px;
+    margin: 24px 0;
+}
+
+.pricing__download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.5em;
+
+    background: #19357C;
+    border-radius: 8px;
+
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.pricing__download svg {
+    margin-right: 0.5em;
+}
+
+.pricing-item {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 2em;
+    margin-bottom: 3em;
+}
+
+.pricing-item b {
+    font-size: 16px;
+    color: #19357C;
+    font-weight: 800;
+}
+
+.pricing-item h4 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #242424;
+}
+
+.pricing-item p {
+    line-height: 1em;
+}
+
+.pricing__notice {
+    margin: 1em 0;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 30px;
+    color: rgba(36, 36, 36, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+    .studio__show {
+        margin-left: -6em;
+    }
+
+    .studio h2 {
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    .pricing__download {
+        max-width: 210px;
+        height: auto;
+    }
+
+    .pricing__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pricing-item {
+        display: grid;
+        grid-template-columns: 60px 1fr;
+    }
+
+    .studio__images {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+
+        height: 620px;
+
+        row-gap: 2em;
+        column-gap: 2em;
+    }
+
+    .studio__image {
+        height: 100%;
+    }
+
+    .studio__image:nth-child(1) {
+        grid-row-end: span 2;
+    }
+
+    .studio__image:nth-child(2) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .studio__image:nth-child(3) {
+        grid-row: 2;
+        grid-column: 2;
+    }
+}
