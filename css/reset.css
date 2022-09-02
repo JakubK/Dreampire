@@ -6,8 +6,8 @@
 html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 3.5em);
 }
-
 
 body{
     height:100vh;
