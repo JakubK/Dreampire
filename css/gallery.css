@@ -85,6 +85,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.gallery__btn.gallery__btn--hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .gallery__nav .gallery__btn:nth-of-type(1) {
