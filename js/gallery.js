@@ -42,7 +42,7 @@ const calculateNavVisibility = (i) => {
 
 const translateGallery = (direction, i) => {
     const left = +getComputedStyle(galleryContents[i]).getPropertyValue('left').split('px')[0];
-    let newLeftRaw = Math.trunc(left + (singleElementWidth + itemSpacing) * direction);
+    let newLeftRaw = Math.trunc(left + (singleElementWidth + (itemSpacing*2)) * direction);
 
     const galleryLeftCorner = 0;
     const galleryRightCorner = -(galleryDimensions[i] - galleries[0].clientWidth);
