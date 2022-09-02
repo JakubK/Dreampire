@@ -6,10 +6,6 @@
     z-index: 100;
 }
 
-.navigation + * {
-    padding-top: 8em;
-}
-
 .navigation__front {
     display: flex;
     align-items: center;
@@ -179,11 +175,13 @@
 
     .shape {
         background: #19357C;
-        border-radius: 90px;
-        width: 700px;
-        height: 700px;
-        transform: translateY(-512px) rotate(9deg);
-        z-index: -1;
+        border-radius: 10vw;
+        width: 100vw;
+        height: 50vw;
+        aspect-ratio: 1;
+        transform: translateX(-72px) translateY(-44vw) rotate(3deg);
+
+        z-index: -2;
     }
 
     .shape__circle {

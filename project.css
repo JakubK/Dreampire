@@ -1,3 +1,7 @@
+.project {
+    margin-top: 8em;
+}
+
 .project__nav {
     margin-bottom: 1em;
 }
@@ -80,6 +84,9 @@
 
 
 @media screen and (min-width: 768px) {
+    .project {
+        margin-top: 0;
+    }
     .project__video {
         margin-left: -6em;
     }

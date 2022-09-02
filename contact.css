@@ -1,4 +1,5 @@
 .contact__nav {
+    margin-top: 8em;
     margin-bottom: 1.3em;
 }
 
@@ -59,6 +60,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .contact__nav {
+        margin-top: 0;
+    }
+    
     .contact__content {
         top: 0;
         padding: 3em;

@@ -1,4 +1,5 @@
 .studio__nav {
+    margin-top: 8em;
     margin-bottom: 1.3em;
 }
 
@@ -29,7 +30,7 @@
 
 .studio__images {
     margin-top: 5em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
 }
 
 .studio__image {
@@ -96,6 +97,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .studio__nav {
+        margin-top: 0;
+    }
+    
     .studio__show {
         margin-left: -6em;
     }
@@ -124,7 +129,7 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr;
-
+        margin-bottom: 9em;
 
         height: 620px;
 
