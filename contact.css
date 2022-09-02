@@ -5,14 +5,14 @@
 
 .contact__image img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 20px;
 
 }
 
 .frame {
     width: 100%;
     background: #FFFFFF;
-    border-radius: 12px;
+    border-radius: 20px;
     box-shadow: 0px 2px 30px rgba(25, 53, 124, 0.12);
 }
 
@@ -50,6 +50,8 @@
 
 .contact__item svg {
     margin-right: 1.5em;
+    width: 40px;
+    height: 40px;
 }
 
 .contact__item span {
@@ -61,12 +63,12 @@
 
 @media screen and (min-width: 768px) {
     .contact__nav {
-        margin-top: 0;
+        margin-top: 2em;
     }
     
     .contact__content {
         top: 0;
-        padding: 3em;
+        padding: 6em 6em 0 6em;
     }
 
     .contact__content h2 {
@@ -77,6 +79,16 @@
     .contact__content p {
         font-size: 20px;
         line-height: 25px;
+    }
+
+    .contact__list {
+        margin-bottom: 4.5em;
+    }
+
+    .contact__list:last-child {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
     }
 
     .frame {

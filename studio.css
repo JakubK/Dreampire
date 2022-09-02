@@ -98,7 +98,7 @@
 
 @media screen and (min-width: 768px) {
     .studio__nav {
-        margin-top: 0;
+        margin-top: 2em;
     }
     
     .studio__show {

@@ -30,12 +30,14 @@ const calculateNavVisibility = (i) => {
 
     if(leftRect.left + leftRect.width/2 > firstItemRect.left && firstItemRect.left < 0)
         left.classList.remove('gallery__btn--hidden');
-    else 
+    else  {
+        galleryContents[i].style.left = '0px';
         left.classList.add('gallery__btn--hidden');
+    }
 
     if(rightRect.right + rightRect.width/2 < lastItemRect.right) 
         right.classList.remove('gallery__btn--hidden');
-     else 
+     else  
         right.classList.add('gallery__btn--hidden');
 }
 

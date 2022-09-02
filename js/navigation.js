@@ -10,11 +10,6 @@ burger.addEventListener('click', () => toggleNavigation());
 navigationClose.addEventListener('click', () => toggleNavigation());
 
 
-const refreshScrollPadding = () => {
-    console.log('refresh');
-    document.documentElement.style.setProperty('--scroll-padding', navigation.offsetHeight - 1 + 'px');
-}
-
+const refreshScrollPadding = () => document.documentElement.style.setProperty('--scroll-padding', navigation.offsetHeight - 1 + 'px');
 refreshScrollPadding();
-
 addEventListener('resize', () => refreshScrollPadding());

@@ -110,6 +110,10 @@
         line-height: 30px;
         max-width: 50%;
     }
+
+    .spec + .spec {
+        margin-top: 7em;
+    }
 }
 
 .clients {
