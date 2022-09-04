@@ -144,7 +144,6 @@
 
     .pricing-item {
         grid-template-columns: auto 1fr;
-        grid-template-rows: auto auto;
         row-gap: 0;
         height: auto;
     }

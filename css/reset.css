@@ -7,7 +7,7 @@
 html, body {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scroll-padding-top: var(--scroll-padding, 3.5em);
+    scroll-padding-top: var(--scroll-padding, 0);
 }
 
 body{
@@ -31,6 +31,10 @@ body > * {
     body > * {
         padding-left: 6em;
         padding-right: 6em;
+    }
+
+    html, body {
+        scroll-padding-top: 0;
     }
 }
 
