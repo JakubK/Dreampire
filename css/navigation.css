@@ -42,18 +42,21 @@
     text-decoration: none;
 }
 
-.navigation__item a:hover, .navigation__item--active a {
+.navigation__item a:hover,
+.navigation__item--active a {
     color: #59B3D7;
 }
 
-.navigation.navigation--active {
-    background: #19357C;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 100;
+@media screen and (max-width: 768px) {
+    .navigation.navigation--active {
+        background: #19357C;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
 }
 
 .navigation__close {
