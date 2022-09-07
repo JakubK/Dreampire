@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="stylesheet" href="./css/breadcrumb.css" />
@@ -53,11 +55,11 @@
             </span>
             <span class="breadcrumb__current">Blog</span>
         </nav>
-        <header class="blog__heading">
+        <header class="blog__heading" data-aos="fade-up">
             <h2>Dowiedz się, jak pracujemy</h2>
             <p>Kreatywny blog poświęcony pracy nad naszymi projektami</p>
         </header>
-        <nav class="blog__categories">
+        <nav class="blog__categories" data-aos="fade-right">
             <span class="blog__category">Wszystko</span>
             <span class="blog__category">Produkcja filmowa</span>
             <span class="blog__category">Fotografia</span>
@@ -65,7 +67,7 @@
             <span class="blog__category">Projektowanie graficzne</span>
         </nav>
         <div class="blog__entries">
-            <article class="blog-entry">
+            <article class="blog-entry" data-aos="fade-up">
                 <!-- <img class="blog-entry__thumb" src="null"/> -->
                 <div class="blog-entry__thumb"></div>
                 <div class="blog-entry__frame">
@@ -77,7 +79,7 @@
                     <p>Lorem ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle...</p>
                 </div>
             </article>
-            <article class="blog-entry">
+            <article class="blog-entry" data-aos="fade-up">
                 <!-- <img class="blog-entry__thumb" src="null"/> -->
                 <div class="blog-entry__thumb"></div>
                 <div class="blog-entry__frame">
@@ -89,7 +91,7 @@
                     <p>Lorem ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle...</p>
                 </div>
             </article>
-            <article class="blog-entry">
+            <article class="blog-entry" data-aos="fade-up">
                 <!-- <img class="blog-entry__thumb" src="null"/> -->
                 <div class="blog-entry__thumb"></div>
                 <div class="blog-entry__frame">
@@ -101,7 +103,7 @@
                     <p>Lorem ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle...</p>
                 </div>
             </article>
-            <article class="blog-entry">
+            <article class="blog-entry" data-aos="fade-up">
                 <!-- <img class="blog-entry__thumb" src="null"/> -->
                 <div class="blog-entry__thumb"></div>
                 <div class="blog-entry__frame">
@@ -113,7 +115,7 @@
                     <p>Lorem ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle...</p>
                 </div>
             </article>
-            <article class="blog-entry">
+            <article class="blog-entry" data-aos="fade-up">
                 <!-- <img class="blog-entry__thumb" src="null"/> -->
                 <div class="blog-entry__thumb"></div>
                 <div class="blog-entry__frame">
@@ -125,7 +127,7 @@
                     <p>Lorem ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle...</p>
                 </div>
             </article>
-            <article class="blog-entry">
+            <article class="blog-entry" data-aos="fade-up">
                 <!-- <img class="blog-entry__thumb" src="null"/> -->
                 <div class="blog-entry__thumb"></div>
                 <div class="blog-entry__frame">
@@ -160,5 +162,9 @@
         </div>
     </footer>
     <script src="./js/navigation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="stylesheet" href="./css/breadcrumb.css" />
@@ -54,7 +56,7 @@
             </span>
             <span class="breadcrumb__current">Kontakt</span>
         </header>
-        <div class="contact__data">
+        <div class="contact__data" data-aos="zoom-in">
             <div class="contact__image">
                 <img src="./img/contact/image.png" />
             </div>
@@ -180,6 +182,12 @@
         </div>
     </footer>
     <script src="./js/navigation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 0
+        });
+    </script>
 </body>
 
 </html>

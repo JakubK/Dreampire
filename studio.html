@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="stylesheet" href="./css/breadcrumb.css" />
@@ -54,9 +56,9 @@
             </span>
             <span class="breadcrumb__current">Studio</span>
         </header>
-        <div class="studio__show">
+        <div class="studio__show" data-aos="fade-up">
         </div>
-        <section class="studio__about">
+        <section class="studio__about" data-aos="fade-up">
             <h2>Studio</h2>
             <p>
                 Wyjątkowa przestrzeń oferująca możliwość realizacji sesji zdjęciowych
@@ -65,10 +67,10 @@
                 o dużych możliwościach.
             </p>
         </section>
-        <section class="studio__pricing pricing">
+        <section class="studio__pricing pricing" data-aos="fade-up">
             <h2>Cennik</h2>
             <div class="pricing__items">
-                <div class="pricing-item">
+                <div class="pricing-item" data-aos="zoom-in">
                     <div class="pricing-item__icon">
                         <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -92,7 +94,7 @@
                         <p>8h - <b>450 zł</b></p>
                     </div>
                 </div>
-                <div class="pricing-item">
+                <div class="pricing-item" data-aos="zoom-in">
                     <div class="pricing-item__icon">
                         <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -133,7 +135,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="pricing-item">
+                <div class="pricing-item" data-aos="zoom-in">
                     <div class="pricing-item__icon">
                         <svg width="44" height="41" viewBox="0 0 44 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -166,7 +168,7 @@
                         <p><b>80 zł</b> za godzinę</p>
                     </div>
                 </div>
-                <div class="pricing-item">
+                <div class="pricing-item" data-aos="zoom-in">
                     <div class="pricing-item__icon">
                         <svg width="53" height="41" viewBox="0 0 53 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -202,7 +204,7 @@
                         <p>Wyceniane indywidualnie</p>
                     </div>
                 </div>
-                <div class="pricing-item">
+                <div class="pricing-item" data-aos="zoom-in">
                     <div class="pricing-item__icon">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -220,24 +222,26 @@
 
 
             </div>
-            <p class="pricing__notice">* Podane ceny są cenami brutto</p>
-            <a href="#" class="pricing__download">
-                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M1 10.8099V16.1608C1 17.1459 1.79856 17.9444 2.78363 17.9444H15.269C16.2541 17.9444 17.0526 17.1459 17.0526 16.1608V10.8099"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M9.02742 1V13.4854M9.02742 13.4854L4.56836 8.6299M9.02742 13.4854L13.4865 8.62999"
-                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                Pobierz cennik
-            </a>
+            <span data-aos="zoom-in">
+                <p class="pricing__notice">* Podane ceny są cenami brutto</p>
+                <a href="#" class="pricing__download">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1 10.8099V16.1608C1 17.1459 1.79856 17.9444 2.78363 17.9444H15.269C16.2541 17.9444 17.0526 17.1459 17.0526 16.1608V10.8099"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.02742 1V13.4854M9.02742 13.4854L4.56836 8.6299M9.02742 13.4854L13.4865 8.62999"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Pobierz cennik
+                </a>
+            </span>
         </section>
         <section class="studio__images">
-            <div class="studio__image">
+            <div class="studio__image" data-aos="fade-up">
             </div>
-            <div class="studio__image">
+            <div class="studio__image" data-aos="fade-up">
             </div>
-            <div class="studio__image">
+            <div class="studio__image" data-aos="fade-up">
             </div>
         </section>
     </main>
@@ -266,6 +270,12 @@
         </div>
     </footer>
     <script src="./js/navigation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 0
+        });
+    </script>
 </body>
 
 </html>
