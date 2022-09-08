@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
@@ -525,7 +527,7 @@
         </div>
     </section>
     <section class="clients">
-        <h2 class="clients__heading">Zaufali nam</h2>
+        <h2 class="clients__heading" data-aos="zoom-in">Zaufali nam</h2>
         <div class="clients__list">
             <img src="./img/clients/client1.png" />
             <img src="./img/clients/client2.png" />
@@ -570,6 +572,12 @@
     </footer>
     <script src="./js/navigation.js"></script>
     <script src="./js/gallery.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 0
+        });
+    </script>
 </body>
 
 </html>
