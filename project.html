@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/navigation.css" />
     <link rel="stylesheet" href="./css/breadcrumb.css" />
@@ -64,11 +66,11 @@
             <span class="breadcrumb__current">PWK Legionowo</span>
         </nav>
         <article class="project__article">
-            <header>
+            <header data-aos="fade-up">
                 <h2>PWK Legionowo</h2>
             </header>
-            <div class="project__video"></div>
-            <div>
+            <div class="project__video" data-aos="fade-up"></div>
+            <div data-aos="fade-up">
                 <p>
                     Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz
                     w przemyśle poligraficznym.
@@ -92,7 +94,7 @@
                 </p>
             </div>
             <div class="project__resources">
-                <div class="resource">
+                <div class="resource" data-aos="flip-up">
                     <svg width="121" height="82" viewBox="0 0 121 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="67" cy="23" r="9" fill="#EEF7FB" />
                         <circle cx="43" cy="58" r="13" fill="#E8EBF2" />
@@ -103,7 +105,7 @@
                     <h4>Klient</h4>
                     <p>PWK Legionowo</p>
                 </div>
-                <div class="resource">
+                <div class="resource" data-aos="flip-up">
                     <svg width="121" height="82" viewBox="0 0 121 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="75.5" cy="63.5" r="8.5" fill="#E8EBF2" />
                         <circle cx="49" cy="30" r="15" fill="#EEF7FB" />
@@ -115,7 +117,7 @@
                     <h4>Czas</h4>
                     <p>2 tygodnie</p>
                 </div>
-                <div class="resource">
+                <div class="resource" data-aos="flip-up">
                     <svg width="121" height="82" viewBox="0 0 121 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="45" cy="63" r="10" fill="#E8EBF2" />
                         <circle cx="77.5" cy="33.5" r="15.5" fill="#EEF7FB" />
@@ -127,7 +129,7 @@
                     <h4>Sprzęt</h4>
                     <p>Lorem Ipsum, Dolor Sit, Amet Consectetur, Adipiscing Elit, Eiusmod Tempor, Incididunt Labore</p>
                 </div>
-                <div class="resource">
+                <div class="resource" data-aos="flip-up">
                     <svg width="121" height="82" viewBox="0 0 121 82" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="75" cy="58" r="15" fill="#EEF7FB" />
                         <ellipse cx="44" cy="28.5" rx="9" ry="8.5" fill="#E8EBF2" />
@@ -141,57 +143,27 @@
                 </div>
             </div>
         </article>
-        <div class="project__others">
+        <div class="project__others" data-aos="fade-up">
             <h2>Zobacz pozostałe projekty</h2>
             <div class="gallery">
-                <div class="gallery__content">
-                    <div class="gallery-item">
-                        <!-- <img src="null"/> -->
-                        <div class="gallery-item__gradient"></div>
-                        <div class="gallery-item__shadow"></div>
-                        <span>Title</span>
+                <div class="gallery__scroller">
+                    <div class="gallery__item">
+                    1
                     </div>
-                    <div class="gallery-item">
-                        <!-- <img src="null"/> -->
-                        <div class="gallery-item__gradient"></div>
-                        <div class="gallery-item__shadow"></div>
-                        <span>Title</span>
+                    <div class="gallery__item">
+                    2
                     </div>
-                    <div class="gallery-item">
-                        <!-- <img src="null"/> -->
-                        <div class="gallery-item__gradient"></div>
-                        <div class="gallery-item__shadow"></div>
-                        <span>Title</span>
+                    <div class="gallery__item">
+                    3
                     </div>
-                    <div class="gallery-item">
-                        <!-- <img src="null"/> -->
-                        <div class="gallery-item__gradient"></div>
-                        <div class="gallery-item__shadow"></div>
-                        <span>Title</span>
+                    <div class="gallery__item">
+                    4
                     </div>
-                    <div class="gallery-item">
-                        <!-- <img src="null"/> -->
-                        <div class="gallery-item__gradient"></div>
-                        <div class="gallery-item__shadow"></div>
-                        <span>Title</span>
+                    <div class="gallery__item">
+                    5
                     </div>
-                    <div class="gallery-item">
-                        <!-- <img src="null"/> -->
-                        <div class="gallery-item__gradient"></div>
-                        <div class="gallery-item__shadow"></div>
-                        <span>Title</span>
-                    </div>
-                    <div class="gallery-item">
-                        <!-- <img src="null"/> -->
-                        <div class="gallery-item__gradient"></div>
-                        <div class="gallery-item__shadow"></div>
-                        <span>Title</span>
-                    </div>
-                    <div class="gallery-item">
-                        <!-- <img src="null"/> -->
-                        <div class="gallery-item__gradient"></div>
-                        <div class="gallery-item__shadow"></div>
-                        <span>Title</span>
+                    <div class="gallery__item">
+                    6
                     </div>
                 </div>
                 <div class="gallery__nav">
@@ -233,6 +205,10 @@
     </footer>
     <script src="./js/navigation.js"></script>
     <script src="./js/gallery.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
