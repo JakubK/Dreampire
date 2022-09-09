@@ -4,9 +4,6 @@ const calculateNavVisibility = (i) => {
     const scrollerContent = scrollers[i].getElementsByClassName('gallery__scroller')[0];
     const scrollerBtns = scrollers[i].getElementsByClassName('gallery__btn');
 
-    console.log(scrollerContent.scrollWidth);
-    console.log(scrollerContent.scrollLeft + scrollerContent.clientWidth);
-
     if (scrollerContent.scrollLeft <= 0)
         scrollerBtns[0].classList.add('gallery__btn--hidden');
     else

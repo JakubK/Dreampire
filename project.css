@@ -73,6 +73,10 @@
     color: #242424;
 }
 
+.project__others {
+    margin-bottom: 3em;
+}
+
 .project__others h2 {
     font-family: 'Gilroy', sans-serif;
     font-weight: 700;
